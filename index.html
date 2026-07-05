@@ -19,6 +19,18 @@
         body {
           margin: 0;
         }
+        @media print {
+          /* 避免工作經歷與精選專案在列印時被跨頁斷開 */
+          article {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+          /* 避免「競賽獲獎」與「其他代表作品」的卡片在列印時被跨頁斷開 */
+          .grid-card {
+            break-inside: avoid;
+            page-break-inside: avoid;
+          }
+        }
       </style>
       <script src="image-slot.js"></script>
     </helmet>
@@ -136,7 +148,7 @@
               style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">Awards</span>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-            <div style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
+            <div class="grid-card" style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:7px"><svg width="17"
                   height="17" viewBox="0 0 24 24" fill="oklch(86% 0.11 88)" stroke="oklch(66% 0.13 78)"
                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto">
@@ -150,7 +162,7 @@
               <div style="font-size:13px;color:oklch(52% 0.04 70)">2025 元太科技（E Ink）電子紙創新設計工作坊<br>提案「Skin-Brick 電子紙積木套組」
               </div>
             </div>
-            <div style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
+            <div class="grid-card" style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:7px"><svg width="17"
                   height="17" viewBox="0 0 24 24" fill="oklch(86% 0.11 88)" stroke="oklch(66% 0.13 78)"
                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto">
@@ -633,7 +645,7 @@
               Works</span>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-            <div
+            <div class="grid-card"
               style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
                 NCKU-Evaluator｜Chrome 擴充功能 <span
@@ -646,7 +658,7 @@
               <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">
                 在成大選課網頁上直接查詢課程評價——把「開十個分頁交叉比對」變成「滑鼠移過去就看到」，改變許多成大學生的選課習慣。</p>
             </div>
-            <div
+            <div class="grid-card"
               style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
                 智能後空翻教練 <span
@@ -655,7 +667,7 @@
               <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">基於 LSTM
                 與姿勢估計（ViTPose）分析後空翻動作並識別錯誤，提供即時運動指導。負責程式開發與模型訓練（PyTorch-Lightning）。</p>
             </div>
-            <div
+            <div class="grid-card"
               style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
                 Taipei City Dashboard <span
@@ -664,7 +676,7 @@
               <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">基於台北城市儀表板開源專案開發，Vue.js 資料視覺化 + Docker Compose
                 容器化微服務（前端／後端／資料庫分離）。</p>
             </div>
-            <div
+            <div class="grid-card"
               style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
               <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
                 bulletin｜高中畢業留言板 <span
