@@ -328,7 +328,7 @@
         </section>
 
         <!-- ============ SELECTED PROJECTS ============ -->
-        <section>
+        <section style="break-before:page;page-break-before:always">
           <div
             style="display:flex;align-items:baseline;justify-content:space-between;margin:34px 0 4px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
             <h2
@@ -493,24 +493,12 @@
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                 </svg>Live Preview · tainan-cafe.web.app</a>
             </div>
-            <p style="margin:0 0 8px">An exploration tool themed around Tainan's cafés: use natural language ("a café
-              with
-              power outlets that's good for working") or practical tags to quickly find places that fit your
-              situation—turning "finding a café" from ten-plus minutes of scrolling through posts into a few-second
-              search.</p>
+            <p style="margin:0 0 8px">A Tainan café exploration tool utilizing natural language queries and semantic tags to streamline café search from minutes of manual reading into seconds.</p>
             <ul style="margin:0 0 8px;padding-left:20px">
-              <li><strong>LLM semantic-extraction pipeline</strong>: fetches café data from multiple sources, dedupes by
-                Place ID, then uses an LLM to extract structured semantic tags from public reviews—each with a
-                confidence
-                score and evidence count (e.g., "plenty of outlets — mentioned in 12 reviews").</li>
-              <li><strong>Natural-language query</strong>: a Supabase Edge Function parses colloquial requests into
-                tag-filter conditions, supporting AND / OR combinations.</li>
-              <li><strong>Community-correction mechanism</strong>: logged-in users can vote on tags to continuously
-                improve data accuracy.</li>
-              <li><strong>UI/UX optimization (core highlight)</strong>: drawing on Google Material Design and Google
-                Maps'
-                "single-page + bottom sheet" interaction model, map, search, and store details are integrated into one
-                screen with smooth transitions, achieving a zero-learning-curve, intuitive experience.</li>
+              <li><strong>LLM Semantic Pipeline</strong>: Aggregates multi-source café data and uses LLMs to extract structured tags (e.g., "power outlets") from reviews, with confidence scores and evidence counts.</li>
+              <li><strong>Natural Language Query</strong>: Deployed Supabase Edge Functions to parse user intent into precise tag filters (AND/OR operations).</li>
+              <li><strong>Crowdsourced Validation</strong>: Implemented a community voting system to verify and correct AI-generated tags.</li>
+              <li><strong>Interactive UI/UX</strong>: Designed a seamless single-page map + bottom-sheet interface (Material Design style) with fluid transitions for zero-learning-curve navigation.</li>
             </ul>
             <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">React 18 · TypeScript · Mapbox GL JS
               · Supabase (PostGIS + Edge Functions) · FastAPI · Python + Playwright · LLM (OpenRouter / OpenAI)</div>
