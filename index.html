@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; }
+</style>
+<script src="image-slot.js"></script>
+</helmet>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" margin="0.7in" style="--doc-sheet-bg: oklch(97.5% 0.01 80)" hint-size="100%,100%">
+
+  <div style="font-family:'DM Sans','Noto Sans TC',system-ui,sans-serif;color:oklch(26% 0.03 60);font-size:14px;line-height:1.7">
+
+    <!-- ============ HEADER ============ -->
+    <header style="display:flex;gap:28px;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:3px solid oklch(26% 0.03 60)">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:12px;letter-spacing:3px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase;margin-bottom:6px">Full-Stack Developer · Resume</div>
+        <h1 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:44px;font-weight:700;margin:0 0 6px;line-height:1.15">陳念誠 <span style="font-size:20px;font-weight:600;color:oklch(52% 0.04 70);font-style:italic">Nien-Cheng Chen</span></h1>
+        <p style="margin:0 0 14px;font-size:15px;color:oklch(52% 0.04 70)">國立成功大學 資訊工程學系 畢業 · 全端開發 × AI 應用 × IoT 軟硬整合</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;font-weight:500;align-items:center">
+          <a href="tel:0906516870" style="display:inline-flex;align-items:center;gap:6px;color:oklch(26% 0.03 60);text-decoration:none"><span style="display:inline-flex;color:oklch(62% 0.14 45)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>0906-516-870</a>
+          <a href="mailto:ncchen99@gmail.com" style="display:inline-flex;align-items:center;gap:6px;color:oklch(26% 0.03 60);text-decoration:none"><span style="display:inline-flex;color:oklch(62% 0.14 45)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>ncchen99@gmail.com</a>
+          <a href="https://github.com/ncchen99" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;color:oklch(26% 0.03 60);text-decoration:none"><span style="display:inline-flex;color:oklch(62% 0.14 45)"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg></span>github.com/ncchen99</a>
+        </div>
+      </div>
+      <image-slot id="profile-photo" shape="circle" src="uploads/NCC-Resume/ncc.jpg" placeholder="個人照片" style="width:128px;height:128px;flex:0 0 auto"></image-slot>
+    </header>
+
+    <!-- ============ 自我介紹 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:30px 0 12px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">自我介紹</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">About</span>
+      </div>
+      <p style="margin:0 0 10px">我熱衷於把身邊觀察到的真實問題，做成<strong>真正有人在用的產品</strong>——從為成大學生設計、上線即累積 300 位使用者的聚餐媒合 App「Tuckin」，到全校 270 個社團幹部每天操作的社團聯合會 CMS 平臺，都是我從發想、設計、開發到上線獨立完成的作品。</p>
+      <p style="margin:0 0 10px">技術版圖橫跨前端（React、Next.js、Vue.js、Flutter）、後端（FastAPI、Supabase、Firebase）、雲端部署（Cloudflare、Fly.io、Docker）與 AI 應用（LLM 語意查詢 Pipeline、Vertex AI RAG）。也具備 IoT 軟硬整合經驗，曾以 ESP32 + MQTT + Flutter 打造分散式電子紙控制系統，並獲元太電子紙創新設計工作坊<strong>第一名創新金獎</strong>、北捷黑客松<strong>第一名與宏碁特別獎</strong>。</p>
+      <p style="margin:0;padding:12px 16px;background:oklch(88% 0.08 55 / 0.35);border-radius:10px">目前正值入伍前空檔（預計 2026 年 10 月入伍），希望把這段完整的時間投入<strong>暑期實習</strong>，在真實的產品團隊中貢獻全端開發與快速交付能力。</p>
+    </section>
+
+    <!-- ============ 技能總覽 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:30px 0 12px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">技能總覽</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">Skills</span>
+      </div>
+      <div style="display:grid;grid-template-columns:110px 1fr;gap:10px 16px;font-size:13px;align-items:baseline">
+        <div style="font-weight:700">前端</div><div>React / Next.js / Vue.js / TypeScript / Tailwind CSS / Astro / PWA</div>
+        <div style="font-weight:700">行動開發</div><div>Flutter（iOS + Android 雙平臺上架經驗）</div>
+        <div style="font-weight:700">後端</div><div>FastAPI / Node.js / Supabase（PostgreSQL + PostGIS）/ Firebase（Auth + Firestore）</div>
+        <div style="font-weight:700">雲端與 DevOps</div><div>Cloudflare Pages / Workers / R2、Fly.io、Vercel、Docker 容器化微服務、GitHub Actions</div>
+        <div style="font-weight:700">AI 應用</div><div>LLM 語意萃取 Pipeline、RAG（Google Vertex AI + BigQuery）、OpenAI API（STT / TTS / SSE 串流）</div>
+        <div style="font-weight:700">測試與 IoT</div><div>Playwright E2E 測試｜ESP32 / MQTT / PlatformIO</div>
+      </div>
+    </section>
+
+    <!-- ============ 競賽與獲獎 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:30px 0 12px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">競賽與獲獎</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">Awards</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+        <div style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:7px"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(86% 0.11 88)" stroke="oklch(66% 0.13 78)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>第一名 創新金獎</div>
+          <div style="font-size:13px;color:oklch(52% 0.04 70)">2025 元太科技（E Ink）電子紙創新設計工作坊<br>提案「Skin-Brick 電子紙積木套組」</div>
+        </div>
+        <div style="background:oklch(88% 0.10 90 / 0.5);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:7px"><svg width="17" height="17" viewBox="0 0 24 24" fill="oklch(86% 0.11 88)" stroke="oklch(66% 0.13 78)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>第一名 + 宏碁特別獎</div>
+          <div style="font-size:13px;color:oklch(52% 0.04 70)">2025 北捷黑客松（台北捷運主辦）<br>作品「捷境 MetroSense」</div>
+        </div>
+      </div>
+      <ul style="margin:0;padding-left:20px;font-size:13px;color:oklch(38% 0.035 65)">
+        <li>雙北城市設計節 <strong>入選決賽</strong>（Taipei City Dashboard 城市儀表板）</li>
+        <li>成大資工系專題 <strong>第三名</strong>（智能後空翻教練：基於 LSTM 之人體動作識別）</li>
+        <li>金矽獎 參賽經驗</li>
+      </ul>
+    </section>
+
+    <!-- ============ 工作經歷 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:30px 0 12px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">工作經歷</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">Experience</span>
+      </div>
+
+      <!-- 太空中心 -->
+      <article style="margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:16.5px;font-weight:700;margin:0">國立成功大學 夏漢民太空科技中心｜網頁工讀生</h3>
+          <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500;white-space:nowrap">2025/09 – 2026/08</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:3px 0 9px">
+          <a href="https://hmsstc.ncku.edu.tw/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上網站 · hmsstc.ncku.edu.tw</a>
+        </div>
+        <p style="margin:0 0 8px">獨立負責中心官方網站從零到上線的架設、視覺設計與長期內容管理。以 Astro 5 建構雙語內容平臺，搭配 Content Collections 管理四大內容類型，並以 schema 驗證確保格式一致。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>降低內容維護門檻</strong>：以 Markdown + Frontmatter 建立標準化上稿流程，撰寫完整維護與發佈手冊（SOP、檔名規則、圖片規範、FAQ），讓非技術人員也能自行更新內容。</li>
+          <li><strong>雙語機制</strong>：中英文檔案配對（<code style="font-size:12px;background:oklch(93% 0.018 75);padding:1px 5px;border-radius:4px">slug.md / slug.en.md</code>），英文缺稿時自動回退中文並提示。</li>
+          <li><strong>圖床自動化</strong>：自行開發 Node.js 上傳工具，自動壓縮 WebP、產生縮圖、上傳 Cloudflare R2 並生成相簿 YAML——把「整理一本相簿」從手動數小時縮短為一行指令。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70)">Astro 5 · TypeScript · Tailwind CSS · React · Cloudflare R2 · Sharp</div>
+      </article>
+
+      <!-- 臺語文 -->
+      <article style="margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:16.5px;font-weight:700;margin:0">成大工業設計系 張婉鈴老師研究室｜前端開發（兼任）</h3>
+          <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500;white-space:nowrap">為期一年</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:3px 0 9px">
+          <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500">臺語文學習平臺</span>
+          <a href="https://www.taigiedu.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上網站 · www.taigiedu.com</a>
+        </div>
+        <p style="margin:0 0 8px">「臺語文計畫」把過往分散的翻譯、詞彙查詢、認證考試資源與在地文化內容整合在同一入口，協助本土語言的教育推廣。我以 React 18 + Vite 建構整個平臺前端：</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>學習工具</strong>：翻譯、逐字稿轉譯、詞彙查詢、親屬關係計算機等頁面開發。</li>
+          <li><strong>會員與後台</strong>：JWT 認證與自動 Token 刷新；管理後台整合拖放排序（dnd-kit）與資料表格（TanStack Table）；Firebase Firestore 即時派送全站公告。</li>
+          <li><strong>品質保證</strong>：建置 Playwright E2E 測試架構（冒煙 + 回歸），整合 Tesseract.js OCR 自動識別驗證碼，實現登入流程自動化測試。</li>
+          <li><strong>部署</strong>：Cloudflare Pages / Workers（Wrangler），以環境變數功能開關控制上線節奏。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70)">React 18 · Vite 7 · React Router · Firebase · Cloudflare · Playwright · Tesseract.js</div>
+      </article>
+
+      <!-- Kdan / PAIA -->
+      <article style="margin-bottom:16px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:16.5px;font-weight:700;margin:0">凱鈿行動科技（Kdan Mobile）｜品質保證實習生</h3>
+          <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500;white-space:nowrap">2024/06 – 2024/09 · 台南</span>
+        </div>
+        <p style="margin:4px 0 0">負責 DottedSign（點點簽）產品線的 Flutter 應用與 SaaS 服務測試，參與測試案例設計與執行。這段經驗養成我以使用者角度檢視產品的習慣，深刻影響後來個人專案重視 E2E 測試的開發文化。</p>
+      </article>
+      <article style="margin-bottom:4px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:16.5px;font-weight:700;margin:0">帕亞科技（PAIA）｜兼職前端工程師</h3>
+          <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500;white-space:nowrap">2022/04 – 2023/03 · 台北</span>
+        </div>
+        <p style="margin:4px 0 0">使用 Vue.js 與 Three.js 開發 3D 場景編輯器，讓使用者能在瀏覽器中直觀編輯與預覽 3D 場景；負責互動介面開發與 3D 渲染效能優化。</p>
+      </article>
+    </section>
+
+    <!-- ============ 精選專案 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:34px 0 4px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">精選專案</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">Selected Projects</span>
+      </div>
+      <p style="margin:8px 0 20px;font-size:13px;color:oklch(52% 0.04 70)">以下專案皆由本人獨立或主導完成——從產品發想、UI 設計、前後端開發到部署上線。</p>
+
+      <!-- Tuckin -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(62% 0.14 45);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">Tuckin｜雙平臺聚餐媒合 App</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(88% 0.08 55);padding:2px 10px;border-radius:99px">300 位使用者</span>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(88% 0.08 55);padding:2px 10px;border-radius:99px">App Store + Google Play 上架</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/Tuckin" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/Tuckin</a>
+        </div>
+        <p style="margin:0 0 8px">專為成大學生設計的聚餐媒合平臺：預約下週聚餐時段，系統自動分組（3 人以上成團）、成員投票決定餐廳，讓陌生同學透過一頓晚餐自然建立連結。把「認識陌生人」的阻力降到最低——上線後許多使用者養成「每週和新朋友吃一頓晚餐」的習慣。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>Real-time 即時系統</strong>：聚餐狀態即時同步到所有成員裝置，搭配 FCM 推播提醒。</li>
+          <li><strong>身分信任機制</strong>：Google OAuth 登入，成大 email 自動獲得學生認證，可選擇僅與校內同學分組。</li>
+          <li><strong>分組演算法</strong>：依時段、飲食偏好與個性測驗自動分組，以出席率停權機制維護聚餐品質。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">Flutter · Supabase（PostgreSQL + Auth + RLS）· FastAPI · Google OAuth · FCM · PLpgSQL</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px">
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/tuckin/screenshot-1.png" alt="Tuckin 主畫面" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/tuckin/screenshot-2.png" alt="Tuckin 預約流程" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/tuckin/screenshot-3.png" alt="Tuckin 餐廳投票" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/tuckin/screenshot-4.png" alt="Tuckin 聚餐確認" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+          </div>
+        </sc-if>
+      </article>
+
+      <!-- NCKU-CA -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(80% 0.07 290);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">NCKU-CA｜社團聯合會 CMS</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(80% 0.07 290 / 0.45);padding:2px 10px;border-radius:99px">全校 270 個社團使用</span>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(80% 0.07 290 / 0.45);padding:2px 10px;border-radius:99px">自發性發起</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/NCKU-CA" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/NCKU-CA</a>
+          <a href="https://ncku-ca.vercel.app" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上預覽 · ncku-ca.vercel.app</a>
+        </div>
+        <p style="margin:0 0 8px">為成大社團聯合會開發的官方網站與 CMS，把過去仰賴紙本與零散表單的行政流程徹底數位化——社團幹部從「跑流程、交紙本」變成「線上填表、即時查詢」。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>表單系統</strong>：模板快速建立、13 種欄位型別、條件顯示、格式驗證、CSV 匯出，可綁定保證金政策。</li>
+          <li><strong>點名系統</strong>：活動現場密碼簽到、即時簽到率、手動補點與匯出——大型活動點名從人工唱名變成幾秒鐘操作。</li>
+          <li><strong>保證金管理</strong>：待繳／已繳／已退還三態管理、批次操作、備註稽核軌跡。</li>
+          <li><strong>資料自動同步</strong>：Python + Playwright 爬蟲自動抓取全校社團資料，每學期一鍵更新主檔。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">Next.js（App Router、ISR）· TypeScript · Firebase · Cloudflare R2 · Python + Playwright · Vercel</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/ncku-ca/demo3.png" alt="NCKU-CA 前臺畫面" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/ncku-ca/demo4.png" alt="NCKU-CA 後臺管理" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+          </div>
+        </sc-if>
+      </article>
+
+      <!-- Coffee Pocket -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(78% 0.07 140);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">Coffee Pocket｜LLM 語意搜尋咖啡廳平臺</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(78% 0.07 140 / 0.45);padding:2px 10px;border-radius:99px">PWA</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/Coffee-Pocket" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/Coffee-Pocket</a>
+          <a href="https://tainan-cafe.web.app" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上預覽 · tainan-cafe.web.app</a>
+        </div>
+        <p style="margin:0 0 8px">以臺南咖啡廳為主題的探索工具：用自然語言（「有插座適合工作的咖啡廳」）或實用標籤快速找到符合情境的店家——「找店」從反覆爬文十幾分鐘變成一次搜尋幾秒鐘。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>LLM 語意萃取 Pipeline</strong>：多來源抓取店家資料、Place ID 去重後，以 LLM 把公開評論萃取為結構化語意標籤，附信心分數與證據數（例：「插座多 — 12 則評論提及」）。</li>
+          <li><strong>自然語言查詢</strong>：Supabase Edge Function 解析口語需求、轉換為標籤篩選條件，支援 AND / OR 組合。</li>
+          <li><strong>社群校正機制</strong>：登入使用者可對標籤投票，持續校正資料正確性。</li>
+          <li><strong>UI/UX 體驗優化（核心亮點）</strong>：參考 Google Material Design 與 Google Maps 的「單頁式 + Bottom Sheet」互動模式，把地圖、搜尋與店家詳情整合在同一畫面流暢切換，達到零學習門檻、順手直覺的操作體驗。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">React 18 · TypeScript · Mapbox GL JS · Supabase（PostGIS + Edge Functions）· FastAPI · Python + Playwright · LLM（OpenRouter / OpenAI）</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/coffee-pocket/home.gif" alt="Coffee Pocket 首頁" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/coffee-pocket/search.gif" alt="語意搜尋" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/coffee-pocket/pocket.gif" alt="口袋名單" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+          </div>
+        </sc-if>
+      </article>
+
+      <!-- Zplit -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(82% 0.07 220);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">Zplit｜即時同步分帳 PWA</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(82% 0.07 220 / 0.45);padding:2px 10px;border-radius:99px">獨創雙軌分帳邏輯</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/Zplit" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/Zplit</a>
+          <a href="https://zplit.web.app" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上預覽 · zplit.web.app</a>
+        </div>
+        <p style="margin:0 0 8px">行動優先的分帳 Web App，以 Firebase 實現跨裝置即時同步。這是一款<strong>特別針對手機端優化</strong>的網頁——從狀態管理到介面設計，皆依照手機的操作流程量身規劃，確保單手操作與即時回饋的順暢體驗。市面工具多以「單次活動群組」為中心，Zplit 獨創<strong>個人與團體雙軌分帳</strong>：出遊的團體帳與室友間的長期往來帳並行管理，固定朋友圈可長期使用同一套工具。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>群組分帳</strong>：平均／指定金額／百分比三種分攤模式，自動計算淨額並給出最少轉帳次數的結算路徑。</li>
+          <li><strong>個人往來</strong>：獨立管理與每位聯絡人的借貸／代墊紀錄，檢視淨額與歷史互動。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">React 19 · TypeScript · Tailwind CSS 4 · Zustand · Firebase（Auth + Firestore）· react-i18next · Playwright · Cloudflare R2 / Turnstile</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px">
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/zplit/login.gif" alt="登入流程" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/zplit/group-edit.gif" alt="群組編輯" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/zplit/personal-add.gif" alt="個人記錄" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0"><img src="uploads/NCC-Resume/images/zplit/setting.gif" alt="功能設定" style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+          </div>
+        </sc-if>
+      </article>
+
+      <!-- MetroSense -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(88% 0.10 90);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">捷境 MetroSense｜AI 智能交通助手</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(88% 0.10 90 / 0.6);padding:2px 10px;border-radius:99px;display:inline-flex;align-items:center;gap:5px"><svg width="13" height="13" viewBox="0 0 24 24" fill="oklch(86% 0.11 88)" stroke="oklch(60% 0.14 78)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 auto"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>2025 北捷黑客松 第一名 + 宏碁特別獎</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/Metro-Sense" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/Metro-Sense</a>
+          <a href="https://metro-sense.vercel.app" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>線上預覽 · metro-sense.vercel.app</a>
+        </div>
+        <p style="margin:0 0 8px">為台北捷運設計的 AI 助手：以「個性化開關」區分<strong>通勤模式</strong>與<strong>旅遊模式</strong>，介面隨使用情境改變，並以自然語言與語音互動取代層層選單，讓長輩與觀光客也能無門檻查詢路線。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>語音互動閉環</strong>：STT → AI 問答 → TTS，AI 回應以 SSE 逐字串流輸出。</li>
+          <li><strong>高可用架構</strong>：Vercel 前端 + Fly.io 主力後端（冷啟動 &lt; 1 秒）+ Render 備援，前端 1 秒內自動偵測並無縫切換，達成使用者無感知的自動容錯。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">React 18 · Framer Motion · FastAPI · OpenAI API（GPT-4 / STT / TTS）· SSE · Vercel + Fly.io + Render</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <figure style="margin:0">
+            <img src="uploads/NCC-Resume/images/metro-sense/demo.png" alt="MetroSense 介面展示" style="width:100%;border-radius:12px;border:1px solid oklch(93% 0.018 75);display:block">
+          </figure>
+        </sc-if>
+      </article>
+
+      <!-- InkSync -->
+      <article style="margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(80% 0.07 290);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">InkSync｜分散式多裝置 E-Paper 控制系統</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(80% 0.07 290 / 0.45);padding:2px 10px;border-radius:99px">IoT 軟硬整合</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/ncchen99/InkSync" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/ncchen99/InkSync</a>
+        </div>
+        <p style="margin:0 0 8px">用手機 App 同時控制多台電子紙裝置的顯示內容，適用展場看板、桌面資訊牌等情境。相關領域經驗也促成 2025 元太電子紙創新設計工作坊<strong>第一名創新金獎</strong>（團隊提案「Skin-Brick 電子紙積木套組」，與成大工設系人因互動設計研究室合作）。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>MQTT 分散式架構</strong>：ESP32-S3 韌體與 Flutter App 均為 MQTT Client，每台裝置以 MAC 位址對應專屬 Topic，可無上限擴充裝置數量。</li>
+          <li><strong>影像處理管線</strong>：App 裁切圖片上傳 Cloudflare R2，韌體下載後解碼並執行 dithering 演算法，輸出至 4.0 吋 7 色電子紙。</li>
+          <li><strong>即時狀態回報與綁定體驗</strong>：訂閱裝置狀態 Topic 即時顯示進度；支援掃描 MAC 條碼綁定裝置。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">ESP32-S3 · Waveshare 7-Color E-Paper · PlatformIO · Flutter + Riverpod · Mosquitto MQTT · Cloudflare R2</div>
+        <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px;align-items:stretch">
+            <figure style="margin:0;height:100%"><img src="uploads/NCC-Resume/images/inksync/epaper-device.jpg" alt="電子紙裝置實體" style="width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0;height:100%"><img src="uploads/NCC-Resume/images/inksync/app-home.png" alt="Flutter App 首頁" style="width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+            <figure style="margin:0;height:100%"><img src="uploads/NCC-Resume/images/inksync/app-device-menu.png" alt="裝置控制選單" style="width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+          </div>
+        </sc-if>
+      </article>
+
+      <!-- Ausexticity -->
+      <article style="margin-bottom:4px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <span style="width:10px;height:10px;border-radius:50%;background:oklch(78% 0.07 140);flex:0 0 auto;align-self:center"></span>
+          <h3 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">Ausexticity｜性教育 AI 問答平臺</h3>
+          <span style="font-size:11.5px;font-weight:600;background:oklch(78% 0.07 140 / 0.45);padding:2px 10px;border-radius:99px">新創合作</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+          <a href="https://github.com/orgs/Ausexticity/repositories?type=source" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500" style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg>github.com/orgs/Ausexticity</a>
+        </div>
+        <p style="margin:0 0 8px">負責官方網站與 AI 問答聊天機器人開發，讓使用者能匿名、即時地向 AI 提問——把「不好意思問」的問題變成可以安心探索的知識。</p>
+        <ul style="margin:0 0 8px;padding-left:20px">
+          <li><strong>RAG 問答系統</strong>：整合 Google Vertex AI RAG 與 BigQuery，讓 AI 回答植基於平臺自有知識庫，降低錯誤資訊風險。</li>
+          <li><strong>SSE 串流回應</strong>：逐字串流輸出提升對話流暢度；Firebase Auth + Firestore 管理使用者與對話。</li>
+        </ul>
+        <div style="font-size:12px;color:oklch(52% 0.04 70)">React · Tailwind CSS · FastAPI · RAG（Vertex AI + BigQuery）· Firebase · Cloudflare Pages</div>
+      </article>
+    </section>
+
+    <!-- ============ 其他代表作品 ============ -->
+    <section>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin:34px 0 12px;border-bottom:1px solid oklch(93% 0.018 75);padding-bottom:8px">
+        <h2 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:22px;font-weight:700;margin:0">其他代表作品</h2>
+        <span style="font-size:11px;letter-spacing:2.5px;color:oklch(62% 0.14 45);font-weight:600;text-transform:uppercase">More Works</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">NCKU-Evaluator｜Chrome 擴充功能 <span style="font-weight:600;font-size:11px;color:oklch(45% 0.03 65);background:oklch(93% 0.018 75);padding:2px 9px;border-radius:99px;white-space:nowrap;display:inline-flex;align-items:center;gap:3px"><svg width="11" height="11" viewBox="0 0 24 24" fill="oklch(84% 0.12 88)" stroke="oklch(64% 0.13 78)" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>GitHub 31 Stars</span></div>
+          <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">在成大選課網頁上直接查詢課程評價——把「開十個分頁交叉比對」變成「滑鼠移過去就看到」，改變許多成大學生的選課習慣。</p>
+        </div>
+        <div style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">智能後空翻教練 <span style="font-weight:600;font-size:11px;color:oklch(42% 0.05 72);background:oklch(88% 0.10 90 / 0.6);padding:2px 9px;border-radius:99px;white-space:nowrap">系上專題 第三名</span></div>
+          <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">基於 LSTM 與姿勢估計（ViTPose）分析後空翻動作並識別錯誤，提供即時運動指導。負責程式開發與模型訓練（PyTorch-Lightning）。</p>
+        </div>
+        <div style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">Taipei City Dashboard <span style="font-weight:600;font-size:11px;color:oklch(42% 0.05 72);background:oklch(88% 0.10 90 / 0.6);padding:2px 9px;border-radius:99px;white-space:nowrap">雙北城市設計節 入選決賽</span></div>
+          <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">基於台北城市儀表板開源專案開發，Vue.js 資料視覺化 + Docker Compose 容器化微服務（前端／後端／資料庫分離）。</p>
+        </div>
+        <div style="background:oklch(96.5% 0.015 75);border:1px solid oklch(93% 0.018 75);border-radius:12px;padding:14px 16px">
+          <div style="font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">bulletin｜高中畢業留言板 <span style="font-weight:600;font-size:11px;color:oklch(45% 0.03 65);background:oklch(93% 0.018 75);padding:2px 9px;border-radius:99px;white-space:nowrap">約 300 名畢業生使用</span></div>
+          <p style="margin:0;font-size:13px;color:oklch(38% 0.035 65)">高中時期以純 HTML / CSS / JS 打造的畢業留言板——我的第一個「有真實使用者」的作品。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <div style="margin-top:32px;padding-top:14px;border-top:2px solid oklch(26% 0.03 60);display:flex;justify-content:space-between;font-size:12px;color:oklch(52% 0.04 70)">
+      <span>陳念誠 Nien-Cheng Chen · <a href="mailto:ncchen99@gmail.com" style="color:oklch(52% 0.04 70);text-decoration:none" style-hover="text-decoration:underline">ncchen99@gmail.com</a> · <a href="tel:0906516870" style="color:oklch(52% 0.04 70);text-decoration:none">0906-516-870</a></span>
+      <a href="https://github.com/ncchen99" target="_blank" rel="noopener" style="color:oklch(52% 0.04 70);text-decoration:none" style-hover="text-decoration:underline">github.com/ncchen99</a>
+    </div>
+
+  </div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;showImages&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;版面&quot; }
+}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showImages: this.props.showImages ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
