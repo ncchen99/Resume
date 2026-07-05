@@ -19,12 +19,15 @@
         body {
           margin: 0;
         }
+
         @media print {
+
           /* 避免工作經歷與精選專案在列印時被跨頁斷開 */
           article {
             break-inside: avoid;
             page-break-inside: avoid;
           }
+
           /* 避免「競賽獲獎」與「其他代表作品」的卡片在列印時被跨頁斷開 */
           .grid-card {
             break-inside: avoid;
@@ -233,7 +236,7 @@
             <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
               <h3
                 style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:16.5px;font-weight:700;margin:0">
-                成大工業設計系 張婉鈴老師研究室｜前端開發</h3>
+                成大工業設計系 張老師研究室｜前端開發</h3>
               <span style="font-size:12.5px;color:oklch(52% 0.04 70);font-weight:500;white-space:nowrap">2025/09 –
                 2026/07</span>
             </div>
