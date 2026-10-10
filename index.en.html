@@ -331,6 +331,67 @@
             led by me—from concept and UI design through frontend/backend development to deployment.
           </p>
 
+          <!-- Resonance -->
+          <article style="margin-bottom:28px">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+              <span
+                style="width:10px;height:10px;border-radius:50%;background:oklch(72% 0.06 185);flex:0 0 auto;align-self:center"></span>
+              <h3
+                style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">
+                Resonance — Story-Card Social Platform</h3>
+              <span
+                style="font-size:11.5px;font-weight:600;background:oklch(85% 0.05 185 / 0.55);padding:2px 10px;border-radius:99px">Web · iOS · Android</span>
+              <span
+                style="font-size:11.5px;font-weight:600;background:oklch(85% 0.05 185 / 0.55);padding:2px 10px;border-radius:99px">Team of 4 · Full-stack lead</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+              <a href="https://github.com/Resonant-Jury/Resonance" target="_blank" rel="noopener"
+                style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500"
+                style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z" />
+                </svg>github.com/Resonant-Jury/Resonance</a>
+              <a href="https://resonance.channel" target="_blank" rel="noopener"
+                style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg
+                  width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>Live · resonance.channel</a>
+            </div>
+            <p style="margin:0 0 8px">
+              We believe in the power of stories: every person is born multi-dimensional and unique, carrying life
+              experiences worth sharing—and stories are the best way to connect people and create influence. That is why
+              we built Resonance. Users write a piece of their life as a story card; when a story moves them, they don't
+              tap a like—they write a card of their own to "resonate" with it. Let lives influence lives.
+            </p>
+            <ul style="margin:0 0 8px;padding-left:20px">
+              <li><strong>One product, three platforms</strong>: a Next.js site plus native SwiftUI and Jetpack Compose
+                apps share a versioned <code>/api/v1</code>; Zod schemas generate the OpenAPI spec and both mobile
+                clients, while design tokens, i18n strings and the story editor all come from the web as the single
+                source of truth.</li>
+              <li><strong>AI as a mirror, not a judge</strong>: before publishing, AI reflects the core insight it reads
+                in a draft; recommendations run vector search over each card's insight, then an LLM reranks and writes
+                the reason—based on what you write, never on clicks or watch time.</li>
+              <li><strong>Connections earned through stories</strong>: the only public reply is another card, messaging
+                is unlocked only by resonating or by a returned note, and any card can be posted anonymously; Firestore
+                security rules and server-side Admin SDK checks guard every write, with reporting, blocking, data
+                export and account deletion.</li>
+            </ul>
+            <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">Next.js 15 · React 19 · TypeScript ·
+              SwiftUI · Jetpack Compose · Firebase (Auth + Firestore) · Cloudflare R2 · OpenAI · FCM · Vercel</div>
+            <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <figure style="margin:0"><img src="uploads/NCC-Resume/images/resonance/feed.webp" alt="Resonance story feed"
+                    style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+                <figure style="margin:0"><img src="uploads/NCC-Resume/images/resonance/write.webp" alt="Resonance writing page with thought map"
+                    style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+              </div>
+            </sc-if>
+          </article>
+
           <!-- Tuckin -->
           <article style="margin-bottom:28px">
             <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">

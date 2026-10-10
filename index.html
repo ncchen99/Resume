@@ -294,6 +294,56 @@
           <p style="margin:8px 0 20px;font-size:13px;color:oklch(52% 0.04 70)">以下專案皆由本人獨立或主導完成——從產品發想、UI 設計、前後端開發到部署上線。
           </p>
 
+          <!-- Resonance -->
+          <article style="margin-bottom:28px">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+              <span
+                style="width:10px;height:10px;border-radius:50%;background:oklch(72% 0.06 185);flex:0 0 auto;align-self:center"></span>
+              <h3
+                style="font-family:'Playfair Display','Noto Serif TC',Georgia,serif;font-size:18px;font-weight:700;margin:0">
+                Resonance 共振｜用故事回應故事的社群平臺</h3>
+              <span
+                style="font-size:11.5px;font-weight:600;background:oklch(85% 0.05 185 / 0.55);padding:2px 10px;border-radius:99px">Web + iOS + Android</span>
+              <span
+                style="font-size:11.5px;font-weight:600;background:oklch(85% 0.05 185 / 0.55);padding:2px 10px;border-radius:99px">四人團隊・全端主導</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:5px 0 9px">
+              <a href="https://github.com/Resonant-Jury/Resonance" target="_blank" rel="noopener"
+                style="display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:oklch(52% 0.04 70);text-decoration:none;font-weight:500"
+                style-hover="text-decoration:underline"><svg width="13" height="13" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.34-1.73-1.34-1.73-1.09-.73.08-.71.08-.71 1.21.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.21a11.5 11.5 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.86.12 3.16.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z" />
+                </svg>github.com/Resonant-Jury/Resonance</a>
+              <a href="https://resonance.channel" target="_blank" rel="noopener"
+                style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:oklch(43% 0.10 145);background:oklch(78% 0.07 140 / 0.32);padding:3px 11px;border-radius:99px;text-decoration:none;font-weight:600"><svg
+                  width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6" />
+                  <path d="M10 14 21 3" />
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                </svg>線上使用 · resonance.channel</a>
+            </div>
+            <p style="margin:0 0 8px">
+              我們相信故事的力量：每個人生而立體而獨特，都帶著自己珍貴的人生經驗；而故事，是串聯人與人、發揮影響力最好的途徑——這是我們打造「共振」的原因。使用者把一段人生寫成一張故事卡片；讀到觸動自己的故事時，回應不是按讚，而是寫下自己的卡片去「共振」它，讓生命影響生命。
+            </p>
+            <ul style="margin:0 0 8px;padding-left:20px">
+              <li><strong>一套產品、三個平臺</strong>：Next.js 網站與 SwiftUI、Jetpack Compose 原生 App 共用版本化的 <code>/api/v1</code>；由 Zod schema 產生 OpenAPI 並自動生成雙平臺客戶端，設計 token、多語字串與編輯器皆以 Web 為單一來源。</li>
+              <li><strong>AI 是鏡子，不是裁判</strong>：發布前由 AI 讀出草稿中的核心體悟；推薦以卡片體悟做向量搜尋，再由 LLM 重排並寫出推薦理由——只看你「寫了什麼」，不看點擊與停留時間。</li>
+              <li><strong>以故事建立連結</strong>：回應只能是另一張卡片、私訊要透過共振或紙條「用故事換來」、每張卡片皆可匿名；Firestore 安全規則與伺服器端 Admin SDK 雙重把關，並提供檢舉、封鎖、資料匯出與帳號刪除。</li>
+            </ul>
+            <div style="font-size:12px;color:oklch(52% 0.04 70);margin-bottom:10px">Next.js 15 · React 19 · TypeScript ·
+              SwiftUI · Jetpack Compose · Firebase（Auth + Firestore）· Cloudflare R2 · OpenAI · FCM · Vercel</div>
+            <sc-if value="{{ showImages }}" hint-placeholder-val="{{ true }}">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <figure style="margin:0"><img src="uploads/NCC-Resume/images/resonance/feed.webp" alt="Resonance 故事動態"
+                    style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+                <figure style="margin:0"><img src="uploads/NCC-Resume/images/resonance/write.webp" alt="Resonance 書寫頁與思緒地圖"
+                    style="width:100%;border-radius:10px;border:1px solid oklch(93% 0.018 75);display:block"></figure>
+              </div>
+            </sc-if>
+          </article>
+
           <!-- Tuckin -->
           <article style="margin-bottom:28px">
             <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
